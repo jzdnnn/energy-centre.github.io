@@ -151,7 +151,7 @@
     flex-wrap: wrap;
 }
 
-.label-1, .label-2, .label-3, .label-4 {
+.label2-1, .label2-2, .label2-3, .label2-4 {
     width: 385px; 
     height: 335px; 
     margin: 15px; 
@@ -161,18 +161,18 @@
     transition: transform 0.3s ease; 
 }
 
-.label-1:hover, .label-2:hover, .label-3:hover, .label-4:hover {
+.label2-1:hover, .label2-2:hover, .label2-3:hover, .label2-4:hover {
     transform: scale(1.05);
 }
 
-.image-label-1, .image-label-2, .image-label-3, .image-label-4 {
+.image-label2-1, .image-label2-2, .image-label2-3, .image-label2-4 {
     width: 100%; 
     height: 100%; 
     object-fit: cover; 
     border-radius: 15px;
 }
 
-.text-label-1, .text-label-2, .text-label-3, .text-label-4 {
+.text-label2-1, .text-label2-2, .text-label2-3, .text-label2-4 {
     position: absolute;
     top: 0;
     left: 0;
@@ -189,7 +189,7 @@
     box-sizing: border-box;
 }
 
-.judul-1, .judul-2, .judul-3, .judul-4 {
+.judul2-1, .judul2-2, .judul2-3, .judul2-4 {
     font-size: 18px;
     font-weight: bold;
 }
@@ -204,11 +204,6 @@
 .content-3 {
     width: 100%;
     position: relative;
-    height: auto;
-    text-align: center;
-    font-size: 14px;
-    color: #fff;
-    font-family: Poppins;
     padding-top: 80px;
 }
 
@@ -219,9 +214,159 @@
     width: 100%;
     text-align: left;
     font-size: 32px;
+    font-family: Poppins;
     color: #000;
     margin-bottom: 20px;
 }
+
+.grid-container-3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.label3-1, .label3-2, .label3-3, .label3-4 {
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center;
+    width: 540px;
+    height: 300px;
+    border-radius: 50px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    background-size: cover;
+}
+
+.label3-1:hover, .label3-2:hover, .label3-3:hover, .label3-4:hover {
+    transform: scale(1.05);
+}
+
+.background-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: #4a9f4a;
+    top: 0;
+    left: 0;
+}
+
+.background-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: #57aa46;
+    top: 0;
+    left: 0;
+}
+
+.img-label3-1, .img-label3-2, .img-label3-3, .img-label3-4 {
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.judul3-1, .judul3-2, .judul3-3, .judul3-4 {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Poppins;
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    position: relative;
+    background-color: #d9d9d9;
+    height: auto;
+    text-align: left;
+    font-size: 14px;
+    color: #000;
+    font-family: Roboto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 40px 20px;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+.footer-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.footer-text-label {
+    margin-top: 20px;
+    max-width: 250px;
+    line-height: 1.5;
+    font-weight: 500;
+    text-align: center;
+}
+
+.footer-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.footer-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.footer-menu-1, .footer-menu-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.menu-title-1, .menu-title-2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.menu1-1, .menu1-2, .menu1-3, .menu1-4, .menu2-1, .menu2-2, .menu2-3, .menu2-4 {
+    font-size: 14px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.menu1-1:hover, .menu1-2:hover, .menu1-3:hover, .menu1-4:hover, .menu2-1:hover, .menu2-2:hover, .menu2-3:hover, .menu2-4:hover {
+    text-decoration: underline;
+    color: #57aa46;
+    transition: color 0.3s ease;
+}
+
 /* Responsiveness using Media Queries */
 @media screen and (max-width: 768px) {
     .navbar {
@@ -254,13 +399,35 @@
         height: auto;
     }
 
-    .label-1, .label-2, .label-3, .label-4 {
+    .label2-1, .label2-2, .label2-3, .label2-4 {
         width: 100%;
         height: auto;
         min-height: 300px;
     }
 
-    .text-label-1, .text-label-2, .text-label-3, .text-label-4 {
+    .text-label2-1, .text-label2-2, .text-label2-3, .text-label2-4 {
         font-size: 12px; 
+    }
+
+    .grid-container-3 {
+        gap: 10px;
+    }
+
+    .label3-1, .label3-2, .label3-3, .label3-4 {
+        width: 90%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-logo-container {
+        margin-bottom: 20px;
+    }
+
+    .footer-menu-1, .footer-menu-2 {
+        text-align: center;
     }
 }
